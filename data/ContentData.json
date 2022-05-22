@@ -1,0 +1,123 @@
+[
+    {
+        "DataType": "iframe",
+        "h3span": "Score of \"ANiMA\" from \"Deemo\" (Piano Cover)",
+        "src": "https://www.dropbox.com/s/xkp2munjc1qoudo/anima_score.pdf?dl=0",
+        "title": "Dropbox",
+        "href": "https://www.dropbox.com/s/xkp2munjc1qoudo/anima_score.pdf?dl=0",
+        "allow": [],
+        "options": {
+            "class": "dropbox-embed"
+        }
+    },
+    {
+        "DataType": "image",
+        "h3span": "A Wake-on-LAN app for macOS",
+        "src": "https://raw.githubusercontent.com/wiyco/WoL-Mac/master/Icons/AppIcons/AppIcon.appiconset/WoL-512.png",
+        "title": "GitHub",
+        "href": "https://github.com/wiyco/WoL-Mac",
+        "allow": [],
+        "options": {
+            "class": ""
+        }
+    },
+    {
+        "DataType": "image",
+        "h3span": "A Wake-on-Lan library in Swift (Contributor)",
+        "src": "img/swift-brands-colored.svg",
+        "title": "GitHub",
+        "href": "https://github.com/jesper-lindberg/Awake",
+        "allow": [],
+        "options": {
+            "class": ""
+        }
+    },
+    {
+        "DataType": "iframe",
+        "h3span": "Vaundy - 不可幸力<br>NOT MY CONTENT&copy;Vaundy",
+        "src": "https://www.youtube-nocookie.com/embed/Gbz2C2gQREI",
+        "title": "YouTube video player",
+        "href": "https://youtu.be/Gbz2C2gQREI",
+        "allow": ["accelerometer;", "clipboard-write;", "encrypted-media;", "gyroscope;", "picture-in-picture;"],
+        "options": {
+            "class": ""
+        }
+    },
+    {
+        "DataType": "iframe",
+        "h3span": "Fujii Kaze - 帰ろう<br>NOT MY CONTENT&copy;Fujii Kaze",
+        "src": "https://www.youtube-nocookie.com/embed/goU1Ei8I8uk",
+        "title": "YouTube video player",
+        "href": "https://youtu.be/goU1Ei8I8uk",
+        "allow": ["accelerometer;", "clipboard-write;", "encrypted-media;", "gyroscope;", "picture-in-picture;"],
+        "options": {
+            "class": ""
+        }
+    },
+    {
+        "DataType": "iframe",
+        "h3span": "PEOPLE 1 - 魔法の歌<br>NOT MY CONTENT&copy;PEOPLE 1",
+        "src": "https://www.youtube-nocookie.com/embed/7EiQnMK0-R4",
+        "title": "YouTube video player",
+        "href": "https://youtu.be/7EiQnMK0-R4",
+        "allow": ["accelerometer;", "clipboard-write;", "encrypted-media;", "gyroscope;", "picture-in-picture;"],
+        "options": {
+            "class": ""
+        }
+    },
+    {
+        "DataType": "iframe",
+        "h3span": "CSS Gradient<br>NOT MY CONTENT&copy;CSS Gradient",
+        "src": "https://cssgradient.io/",
+        "title": "Powered",
+        "href": "https://cssgradient.io/",
+        "allow": [],
+        "options": {
+            "class": ""
+        }
+    },
+    {
+        "DataType": "iframe",
+        "h3span": "Font Awesome<br>NOT MY CONTENT&copy;Fonticons, Inc.",
+        "src": "https://fontawesome.com/search",
+        "title": "Powered",
+        "href": "https://fontawesome.com/search",
+        "allow": [],
+        "options": {
+            "class": ""
+        }
+    },
+    {
+        "DataType": "iframe",
+        "h3span": "Color Hunt<br>NOT MY CONTENT&copy;Gal Shir",
+        "src": "https://colorhunt.co/",
+        "title": "Powered",
+        "href": "https://colorhunt.co/",
+        "allow": [],
+        "options": {
+            "class": ""
+        }
+    },
+    {
+        "DataType": "image",
+        "h3span": "このテキストエリアは３行目以降のはみ出た文字を省略して表示します。 / This text area omits the overflow characters after the fourth line.",
+        "src": "assets/favicon/safari-pinned-tab.svg",
+        "title": "Demo",
+        "href": "assets/favicon/safari-pinned-tab.svg",
+        "allow": [],
+        "options": {
+            "class": ""
+        }
+    },
+    {
+        "DataType": "image",
+        "h3span": "このテキストエリアは３行目以降のはみ出た文字を省略して表示します。 / This text area omits the overflow characters after the fourth line.",
+        "src": "assets/favicon/safari-pinned-tab.svg",
+        "title": "Demo",
+        "href": "assets/favicon/safari-pinned-tab.svg",
+        "allow": [],
+        "options": {
+            "class": ""
+        }
+    }
+]

@@ -1,0 +1,446 @@
+/* @font-face {
+    font-family: "M PLUS Rounded 1c 100";
+    src: url(../../assets/fonts/MPLUSRounded1c-Thin.ttf);
+}
+@font-face {
+    font-family: "M PLUS Rounded 1c 300";
+    src: url(../../assets/fonts/MPLUSRounded1c-Light.ttf);
+} */
+@font-face {
+    font-family: "M PLUS Rounded 1c 400";
+    src: url(../../assets/fonts/MPLUSRounded1c-Regular.ttf);
+}
+/* @font-face {
+    font-family: "M PLUS Rounded 1c 500";
+    src: url(../../assets/fonts/MPLUSRounded1c-Medium.ttf);
+}
+@font-face {
+    font-family: "M PLUS Rounded 1c 700";
+    src: url(../../assets/fonts/MPLUSRounded1c-Bold.ttf);
+}
+@font-face {
+    font-family: "M PLUS Rounded 1c 800";
+    src: url(../../assets/fonts/MPLUSRounded1c-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "M PLUS Rounded 1c 900";
+    src: url(../../assets/fonts/MPLUSRounded1c-Black.ttf);
+} */
+/* @font-face {
+    font-family: "Zen Kaku Gothic New 300";
+    src: url(../../assets/fonts/ZenKakuGothicNew-Light.ttf);
+} */
+@font-face {
+    font-family: "Zen Kaku Gothic New 400";
+    src: url(../../assets/fonts/ZenKakuGothicNew-Regular.ttf);
+}
+/* @font-face {
+    font-family: "Zen Kaku Gothic New 500";
+    src: url(../../assets/fonts/ZenKakuGothicNew-Medium.ttf);
+}
+@font-face {
+    font-family: "Zen Kaku Gothic New 700";
+    src: url(../../assets/fonts/ZenKakuGothicNew-Bold.ttf);
+}
+@font-face {
+    font-family: "Zen Kaku Gothic New 900";
+    src: url(../../assets/fonts/ZenKakuGothicNew-Black.ttf);
+} */
+
+@keyframes float-up {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.float-up.show {
+    animation: float-up 0.5s ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#loading {
+    z-index: 2000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #fafafa;
+    transition: top 0.5s ease;
+}
+#loading-path {
+    z-index: 2000;
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+#loading.loaded {
+    top: -100%;
+}
+#loading-path.loaded {
+    opacity: 0;
+}
+main {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* min-height: -webkit-fill-available; */
+    min-width: 256px;
+    /* min-width: -webkit-fill-available; */
+    background: #fafafa;
+}
+/* Safari */
+@supports (-webkit-touch-callout: none) {
+    html {
+        height: -webkit-fill-available;
+        width: -webkit-fill-available;
+    }
+    body {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+        min-width: 256px;
+        min-width: -webkit-fill-available;
+    }
+}
+
+header {
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background: rgba(250, 250, 250, 0.91);
+}
+header h1 {
+    margin-left: calc(6rem / 4);
+    height: 3rem;
+}
+header h1 span {
+    font-family: "M PLUS Rounded 1c 400", sans-serif;
+    font-size: xx-large;
+    color: #111;
+    line-height: 2.8rem;
+}
+.burger {
+    visibility: hidden;
+}
+.navi {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    background: none;
+    border-radius: 0;
+    justify-content: normal;
+    transition: none;
+}
+.navi li {
+    position: relative;
+}
+.navi li::after {
+    content: attr(title);
+    font-size: small;
+    color: #1f1f1f;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    background: rgba(250, 250, 250, 0.91);
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+.navi li:hover::after {
+    transform: scale(1, 1);
+    visibility: visible;
+    opacity: 1;
+}
+.navi li a {
+    display: block;
+    font-family: "M PLUS Rounded 1c 400", sans-serif;
+    font-size: medium;
+    color: #1f1f1f;
+    text-indent: -500rem;
+    text-align: center;
+    position: relative;
+    width: 6rem;
+    line-height: 3rem;
+    margin-left: 0;
+    transition: opacity 0.3s ease;
+}
+.navi li a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: medium;
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.navi li a:hover {
+    opacity: 0.6;
+}
+.navi li #home::before {
+    content: "\f015";
+    color: #fa4252;
+}
+.navi li #works::before {
+    content: "\f187";
+    color: #fe6845;
+}
+.navi li #skills::before {
+    content: "\f121";
+    color: #ffa259;
+}
+.navi li #contact::before {
+    content: "\f27a";
+    color: #91bd3a;
+}
+
+footer {
+    font-size: x-small;
+    color: #fff;
+    background: #3d4040;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+.left {
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 3);
+}
+.right {
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 3);
+}
+.center {
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 3);
+}
+.social {
+    position: relative;
+}
+.social :nth-child(n) {
+    font-size: large;
+    margin: 0 calc(100% / 3 / 4);
+}
+#social::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f27a";
+}
+#social-box {
+    display: flex;
+    width: 100%;
+    height: 1.5rem;
+    position: absolute;
+    bottom: calc(3.5rem / 2 + 15px);
+    left: 0;
+    transform: translate(-50%, -50%);
+    transform: scale(1, 0);
+    transform-origin: center bottom;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+#social-box :nth-child(n) {
+    font-size: x-large;
+    color: #3d4040;
+}
+#social.opened::before {
+    content: "\f070";
+}
+#social-box.opened {
+    transform: scale(1, 1);
+    visibility: visible;
+    opacity: 1;
+}
+
+main {
+    flex: 1;
+    min-height: 1px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 3rem;
+    margin-bottom: calc(1.5rem + 12px);
+}
+main h2 {
+    font-family: "M PLUS Rounded 1c 400", sans-serif;
+    font-size: large;
+    color: #1f1f1f;
+    text-align: center;
+    line-height: 3rem;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 12px;
+}
+.item {
+    padding: 24px;
+    width: calc((100% - 24px * 2) / 3);
+    background: #effeff;
+    border: 1px solid #acf3ff;
+    border-radius: 12px;
+    opacity: 0;
+}
+.item > a > :first-child {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+}
+.item h3 {
+    margin-top: 18px;
+    height: calc(1.2rem * 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #8f8f8f;
+    overflow: hidden;
+}
+.item h3 span {
+    font-family: "Zen Kaku Gothic New 400", sans-serif;
+    font-size: medium;
+    color: #1f1f1f;
+    text-align: center;
+    margin-top: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+@media not all and (min-width: 768px) {
+    .burger {
+        z-index: 1000;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        visibility: visible;
+    }
+    .burger::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: large;
+        content: "\f0c9";
+        display: block;
+        color: #1f1f1f;
+        text-align: center;
+        position: relative;
+        width: 6rem;
+        line-height: 3rem;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+    }
+    .burger.opened::before {
+        content: "\f00d";
+        transform: rotate(-180deg);
+    }
+    .navi {
+        display: flex;
+        position: fixed;
+        top: -100%;
+        right: -100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100% - 3rem);
+        background: rgba(250, 250, 250, 0.91);
+        border-radius: 0 0 0 120px;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    .navi.opened {
+        top: 3rem;
+        right: 0;
+    }
+    .navi li {
+        position: relative;
+    }
+    .navi li::after {
+        visibility: hidden;
+    }
+    .navi li:hover::after {
+        visibility: hidden;
+    }
+    .navi li a {
+        display: block;
+        color: #1f1f1f;
+        text-indent: 0;
+        text-align: start;
+        position: relative;
+        width: 6rem;
+        line-height: 3rem;
+        margin-left: calc(6rem / 4 + 1.8rem);
+        transition: none;
+    }
+    .navi li a::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: medium;
+        text-indent: 0;
+        position: absolute;
+        top: 0;
+        left: -1.8rem;
+        width: 100%;
+        height: 100%;
+    }
+    .navi li a:hover {
+        opacity: 1;
+    }
+    .navi li #home::before {
+        content: "\f015";
+        color: #fa4252;
+    }
+    .navi li #works::before {
+        content: "\f187";
+        color: #fe6845;
+    }
+    .navi li #skills::before {
+        content: "\f121";
+        color: #ffa259;
+    }
+    .navi li #contact::before {
+        content: "\f27a";
+        color: #91bd3a;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
