@@ -133,8 +133,8 @@ window.onload = () => {
     loading();
 
     // burger clicked - header
-    document.querySelector("header button.burger").onclick = () => {
-        document.querySelectorAll("button.burger, ul.navi").forEach((elem, index) => {
+    document.getElementById("burger").onclick = () => {
+        document.querySelectorAll("#burger, ul.navi").forEach((elem, index) => {
             elem.classList.toggle("opened");
         });
     }

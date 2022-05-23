@@ -46,8 +46,10 @@ const Iframe = class extends BasicData {
     get html() {
         return `<div class="item float-up">\
                 <a href="${this.href}" target="_blank" rel="noopener noreferrer">\
+                <div class="thumb">\
                 <iframe class="${this.options.class}" src="${this.src}" title="${this.title}" \
                 frameborder="0" allow="${this.allow.join("")}" allowfullscreen></iframe>\
+                </div>\
                 <h3><span>${this.h3span}</span></h3>\
                 </a>\
                 </div>`;

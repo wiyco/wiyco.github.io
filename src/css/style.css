@@ -88,17 +88,13 @@
 #loading-path.loaded {
     opacity: 0;
 }
-main {
-    display: none;
-}
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* min-height: -webkit-fill-available; */
+    /* min-height: 100dvh; */   /* iOS 15.4~ */
     min-width: 256px;
-    /* min-width: -webkit-fill-available; */
     background: #fafafa;
 }
 /* Safari */
@@ -133,7 +129,7 @@ header h1 span {
     color: #111;
     line-height: 2.8rem;
 }
-.burger {
+#burger {
     visibility: hidden;
 }
 .navi {
@@ -286,6 +282,7 @@ footer {
 }
 
 main {
+    display: none;  /* loading */
     flex: 1;
     min-height: 1px;
     margin-left: 24px;
@@ -314,10 +311,19 @@ main h2 {
     border-radius: 12px;
     opacity: 0;
 }
-.item > a > :first-child {
+.item .thumb {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: contain;
+}
+.item img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+}
+.item .thumb > iframe {
+    width: 100%;
+    height: 100%;
 }
 .item h3 {
     margin-top: 18px;
@@ -339,8 +345,9 @@ main h2 {
     -webkit-line-clamp: 2;
 }
 
+/* mobile */
 @media not all and (min-width: 768px) {
-    .burger {
+    #burger {
         z-index: 1000;
         display: flex;
         position: fixed;
@@ -351,7 +358,7 @@ main h2 {
         margin: 0;
         visibility: visible;
     }
-    .burger::before {
+    #burger::before {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: large;
@@ -365,7 +372,7 @@ main h2 {
         transform: rotate(0deg);
         transition: transform 0.3s ease;
     }
-    .burger.opened::before {
+    #burger.opened::before {
         content: "\f00d";
         transform: rotate(-180deg);
     }
