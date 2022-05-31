@@ -38,7 +38,7 @@
         "src": "https://www.youtube-nocookie.com/embed/Gbz2C2gQREI",
         "title": "YouTube video player",
         "href": "https://youtu.be/Gbz2C2gQREI",
-        "allow": ["accelerometer;", "clipboard-write;", "encrypted-media;", "gyroscope;", "picture-in-picture;"],
+        "allow": ["accelerometer", "clipboard-write", "encrypted-media", "gyroscope", "picture-in-picture"],
         "options": {
             "class": ""
         }
@@ -49,7 +49,7 @@
         "src": "https://www.youtube-nocookie.com/embed/goU1Ei8I8uk",
         "title": "YouTube video player",
         "href": "https://youtu.be/goU1Ei8I8uk",
-        "allow": ["accelerometer;", "clipboard-write;", "encrypted-media;", "gyroscope;", "picture-in-picture;"],
+        "allow": ["accelerometer", "clipboard-write", "encrypted-media", "gyroscope", "picture-in-picture"],
         "options": {
             "class": ""
         }
@@ -60,7 +60,7 @@
         "src": "https://www.youtube-nocookie.com/embed/7EiQnMK0-R4",
         "title": "YouTube video player",
         "href": "https://youtu.be/7EiQnMK0-R4",
-        "allow": ["accelerometer;", "clipboard-write;", "encrypted-media;", "gyroscope;", "picture-in-picture;"],
+        "allow": ["accelerometer", "clipboard-write", "encrypted-media", "gyroscope", "picture-in-picture"],
         "options": {
             "class": ""
         }

@@ -3,7 +3,7 @@ Coding in Vanilla JS
 Performance fence
 ************************************************** */
 
-import * as ContentData from "../modules/contents.js";
+import * as ContentData from "../modules/content.js";
 
 // window loading
 const loading = async () => {
@@ -79,7 +79,8 @@ const loading = async () => {
         });
     // merge into <main><div class="wrap">
     const contentHTMLmerge = await contentHTML.map((item, index) => {
-        document.querySelector("main div.wrap").innerHTML += item;
+        // document.querySelector("main div.wrap").innerHTML += item;
+        return document.querySelector("main div.wrap").insertAdjacentHTML("beforeend", item);
     });
     await Promise.all(contentHTMLmerge)
         .then(() => {
