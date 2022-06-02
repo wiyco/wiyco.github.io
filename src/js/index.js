@@ -54,7 +54,7 @@ const loading = async () => {
             console.error(`response.json(): ${e.name}: ${e.message}`);
         });
     // format
-    const contentHTML = data.map(async (item) => {
+    const contentConverter = data.map(async (item) => {
         if (item.DataType == "image") {
             contentImage.html = item;
             return contentImage.html;
@@ -66,20 +66,22 @@ const loading = async () => {
             console.info(`item.DataType: ${item.DataType}: unregistered value.`);
         }
     });
-    await Promise.all(contentHTML)
+    await Promise.all(contentConverter)
         .then((result) => {
-            result.forEach((item) => {
-                wrap.insertAdjacentHTML("beforeend", item);
-            });
+            // result.forEach((item) => {
+            //     wrap.insertAdjacentHTML("beforeend", item);
+            // });
+            // merge items into <main><div class="wrap">
+            wrap.insertAdjacentHTML("beforeend", result.join(""));
             // bar ~100%
             bar.animate(1.0, () => {
+                // add float-up event to content
+                floatUp();
                 // enable <main><div class="wrap">
                 wrap.style.cssText = "display: flex;";
                 // hide loading screen
-                document.querySelector("#loading, #loading-path").classList.add("loaded");
+                document.getElementById("loading").classList.add("loaded");
             });
-            // add float-up event to content
-            floatUp();
         })
         .catch((e) => {
             console.error(`Promise.all(contentHTML): ${e.name}: ${e.message}`);
@@ -93,14 +95,13 @@ function floatUp() {
         rootMargin: "18px 0px 18px 0px",
         threshold: [0.0, 0.5, 1.0]
     };
-    const vheight = window.innerHeight;
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             let rect = entry.target.getBoundingClientRect();
             // visible range
-            if ((0 < rect.top && rect.top < vheight) ||
-                (0 < rect.bottom && rect.bottom < vheight) ||
-                (0 > rect.top && rect.bottom > vheight)) {
+            if ((0 < rect.top && rect.top < window.innerHeight) ||
+                (0 < rect.bottom && rect.bottom < window.innerHeight) ||
+                (0 > rect.top && rect.bottom > window.innerHeight)) {
                 entry.target.classList.add("show");
             } else {
                 entry.target.classList.remove("show");
@@ -135,7 +136,7 @@ window.onload = () => {
 
     // burger clicked - header
     document.getElementById("burger").onclick = () => {
-        document.querySelectorAll("#burger, ul.navi").forEach((elem) => {
+        document.querySelectorAll("#burger, ul.navi, main").forEach((elem) => {
             elem.classList.toggle("opened");
         });
     }

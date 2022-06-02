@@ -35,7 +35,7 @@
     {
         "DataType": "iframe",
         "h3span": "Vaundy - 不可幸力<br>NOT MY CONTENT&copy;Vaundy",
-        "src": "https://www.youtube-nocookie.com/embed/Gbz2C2gQREI",
+        "src": "https://www.youtube.com/embed/Gbz2C2gQREI",
         "title": "YouTube video player",
         "href": "https://youtu.be/Gbz2C2gQREI",
         "allow": ["accelerometer", "clipboard-write", "encrypted-media", "gyroscope", "picture-in-picture"],
@@ -46,7 +46,7 @@
     {
         "DataType": "iframe",
         "h3span": "Fujii Kaze - 帰ろう<br>NOT MY CONTENT&copy;Fujii Kaze",
-        "src": "https://www.youtube-nocookie.com/embed/goU1Ei8I8uk",
+        "src": "https://www.youtube.com/embed/goU1Ei8I8uk",
         "title": "YouTube video player",
         "href": "https://youtu.be/goU1Ei8I8uk",
         "allow": ["accelerometer", "clipboard-write", "encrypted-media", "gyroscope", "picture-in-picture"],
@@ -57,7 +57,7 @@
     {
         "DataType": "iframe",
         "h3span": "PEOPLE 1 - 魔法の歌<br>NOT MY CONTENT&copy;PEOPLE 1",
-        "src": "https://www.youtube-nocookie.com/embed/7EiQnMK0-R4",
+        "src": "https://www.youtube.com/embed/7EiQnMK0-R4",
         "title": "YouTube video player",
         "href": "https://youtu.be/7EiQnMK0-R4",
         "allow": ["accelerometer", "clipboard-write", "encrypted-media", "gyroscope", "picture-in-picture"],
