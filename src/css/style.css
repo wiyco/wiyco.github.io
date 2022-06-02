@@ -347,7 +347,6 @@ main h2 {
     align-items: center;
     justify-content: center;
     border-top: 1px solid #8f8f8f;
-    overflow: hidden;
 }
 .item h3 span {
     font-family: "Zen Kaku Gothic New 400", sans-serif;
@@ -358,6 +357,8 @@ main h2 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    overflow: hidden;
+    visibility: visible !important;
 }
 .none {
     font-family: "Zen Kaku Gothic New 400", sans-serif;
