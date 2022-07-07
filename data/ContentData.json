@@ -2,9 +2,20 @@
     {
         "DataType": "iframe",
         "h3span": "Score of \"ANiMA\" from \"Deemo\" (Piano Cover)",
-        "src": "https://www.dropbox.com/s/xkp2munjc1qoudo/anima_score.pdf?dl=0",
+        "src": "https://www.dropbox.com/s/xkp2munjc1qoudo/anima_score.pdf?raw=1",
         "title": "Dropbox",
         "href": "https://www.dropbox.com/s/xkp2munjc1qoudo/anima_score.pdf?dl=0",
+        "allow": [],
+        "options": {
+            "class": "dropbox-embed"
+        }
+    },
+    {
+        "DataType": "image",
+        "h3span": "The summer in Japan (Blender)",
+        "src": "https://www.dropbox.com/s/uchb6vle50x8f1a/test_v3_8bit_RGB.png?raw=1",
+        "title": "Dropbox",
+        "href": "https://www.dropbox.com/s/uchb6vle50x8f1a/test_v3_8bit_RGB.png?dl=0",
         "allow": [],
         "options": {
             "class": "dropbox-embed"
@@ -71,17 +82,6 @@
         "src": "https://cssgradient.io/",
         "title": "Powered",
         "href": "https://cssgradient.io/",
-        "allow": [],
-        "options": {
-            "class": ""
-        }
-    },
-    {
-        "DataType": "iframe",
-        "h3span": "Font Awesome<br>NOT MY CONTENT&copy;Fonticons, Inc.",
-        "src": "https://fontawesome.com/search",
-        "title": "Powered",
-        "href": "https://fontawesome.com/search",
         "allow": [],
         "options": {
             "class": ""

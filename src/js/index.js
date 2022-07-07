@@ -152,6 +152,9 @@ window.onload = () => {
     document.querySelectorAll("#works, #skills").forEach((elem) => {
         elem.onclick = function () {
             loadPage(this);
+            document.querySelectorAll("#burger, ul.navi, main").forEach((elem) => {
+                elem.classList.toggle("opened");
+            });
         }
     });
 }
