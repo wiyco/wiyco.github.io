@@ -13,12 +13,34 @@
     {
         "DataType": "image",
         "h3span": "The summer in Japan (Blender)",
-        "src": "https://www.dropbox.com/s/uchb6vle50x8f1a/test_v3_8bit_RGB.png?raw=1",
+        "src": "https://www.dropbox.com/s/efj5oj1yg4juiba/test_v3_8bit_rgb_720p.png?raw=1",
         "title": "Dropbox",
         "href": "https://www.dropbox.com/s/uchb6vle50x8f1a/test_v3_8bit_RGB.png?dl=0",
         "allow": [],
         "options": {
             "class": "dropbox-embed"
+        }
+    },
+    {
+        "DataType": "image",
+        "h3span": "Diving Log",
+        "src": "https://www.dropbox.com/s/c71a6h9s9qu9f5s/PC230099_thumb.JPG?raw=1",
+        "title": "Dropbox",
+        "href": "https://www.dropbox.com/sh/ga9ffcmhvix24me/AABSDQApovKiEgnUFs488fMla?dl=0",
+        "allow": [],
+        "options": {
+            "class": "dropbox-embed"
+        }
+    },
+    {
+        "DataType": "image",
+        "h3span": "Karting Microgame \"Player vs AI\" (Unity)",
+        "src": "https://www.dropbox.com/s/oukt4t481038tk9/demo_thumb.gif?raw=1",
+        "title": "GitHub",
+        "href": "https://github.com/wiyco/Karting-PvA-Unity",
+        "allow": [],
+        "options": {
+            "class": ""
         }
     },
     {
@@ -72,28 +94,6 @@
         "title": "YouTube video player",
         "href": "https://youtu.be/7EiQnMK0-R4",
         "allow": ["accelerometer", "clipboard-write", "encrypted-media", "gyroscope", "picture-in-picture"],
-        "options": {
-            "class": ""
-        }
-    },
-    {
-        "DataType": "iframe",
-        "h3span": "CSS Gradient<br>NOT MY CONTENT&copy;CSS Gradient",
-        "src": "https://cssgradient.io/",
-        "title": "Powered",
-        "href": "https://cssgradient.io/",
-        "allow": [],
-        "options": {
-            "class": ""
-        }
-    },
-    {
-        "DataType": "iframe",
-        "h3span": "Color Hunt<br>NOT MY CONTENT&copy;Gal Shir",
-        "src": "https://colorhunt.co/",
-        "title": "Powered",
-        "href": "https://colorhunt.co/",
-        "allow": [],
         "options": {
             "class": ""
         }

@@ -24,7 +24,7 @@ const Image = class extends BasicData {
     get html() {
         return `<div class="item float-up">\
                 <a href="${this.href}" target="_blank" rel="noopener noreferrer">\
-                <img loading="lazy" class="thumb" src="${this.src}" alt="${this.title}">\
+                <img class="thumb" src="${this.src}" alt="${this.title}">\
                 <h3><span>${this.h3span}</span></h3>\
                 </a>\
                 </div>`;

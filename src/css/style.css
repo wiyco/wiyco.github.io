@@ -335,6 +335,7 @@ main h2 {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: contain;
+    visibility: visible !important;
 }
 .item .thumb > iframe {
     width: 100%;
@@ -353,6 +354,7 @@ main h2 {
     font-size: medium;
     color: #1f1f1f;
     text-align: center;
+    line-height: calc(1.25rem + 1px);
     margin-top: 18px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -368,8 +370,9 @@ main h2 {
     justify-content: center;
 }
 
-/* mobile */
-@media not all and (min-width: 768px) {
+/* mobile 768px*/
+/* smartphone only => @media not all and (min-width: 768px) */
+@media only screen and (max-width: 768px) {
     #burger {
         z-index: 1000;
         display: flex;
